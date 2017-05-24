@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    tools:context="com.getaround.getaroundgalleryviewer.activities.PhotoDetailsActivity">
+
+    <android.support.v7.widget.CardView
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerInParent="true"
+    android:layout_margin="@dimen/card_details_margin"
+    android:elevation="3dp"
+    app:cardBackgroundColor="@color/colorBlack"
+    card_view:cardCornerRadius="@dimen/card_photo_radius">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/photo_title_padding">
+
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:paddingLeft="@dimen/photos_detail_title_padding"
+                android:paddingRight="@dimen/photos_detail_title_padding"
+                android:paddingTop="@dimen/photos_detail_title_padding"
+                android:textAllCaps="true"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/photo_title"
+                android:textStyle="bold"
+                android:typeface="serif"
+                tools:text="title"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="@dimen/photos_detail_title_margin" />
+
+            <ImageView
+                android:id="@+id/ivPhoto"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/photo_cover_height"
+                android:layout_centerInParent="true"
+                android:clickable="true"
+                android:scaleType="fitCenter"
+                tools:background="@mipmap/ic_launcher" />
+
+            <TextView
+                android:id="@+id/photoDesc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ivPhoto"
+                android:gravity="left"
+                android:layout_marginTop="@dimen/photos_detail_desc_margin"
+                android:paddingBottom="@dimen/photo_title_padding"
+                android:paddingLeft="@dimen/photo_title_padding"
+                android:paddingRight="@dimen/photo_title_padding"
+                android:paddingTop="@dimen/photo_title_padding"
+                android:textColor="@color/colorWhite"
+                android:textStyle="italic"
+                android:typeface="monospace"
+                tools:text="description" />
+
+            <include layout="@layout/action_view_progress"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_centerInParent="true"
+                />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+
+</RelativeLayout>

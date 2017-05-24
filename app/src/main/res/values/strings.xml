@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">GalleryViewer</string>
+    <string name="login">Login</string>
+    <string name="clientId">UU6XQeziu01adhSANZo3J5gDsZD6gaFyJXomYlhz</string>
+    <string name="secretKey">5CZl9ZYnOwvOn35Jg3sKFFDR6nKZC4DK2NctRPUc</string>
+    <string name="empty_list">Photo list is empty!</string>
+    <string name="loading">Loading ...</string>
+    <string name="connection_failure">Looks like no photos to show at the moment!</string>
+    <string name="photo_load_fail">Hey, try that again! A little problem loading the photo!</string>
+</resources>
