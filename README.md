@@ -10,6 +10,6 @@ Walkthrough the app :
 
 <img src='http://imgur.com/Q3je3JV.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
-*GIF created with [LiceCap](http://www.cockos.com/licecap/).
-*Use of Retrofit to communicate with server
-*Use of Picasso to download images
+*GIF created with [LiceCap](http://www.cockos.com/licecap/). <br/>
+*Use of Retrofit to communicate with server. <br/>
+*Use of Picasso to download images. <br/>
